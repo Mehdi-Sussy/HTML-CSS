@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+@import url(./_reset.css);
+:root{
+    --white:#fff;
+    --gray:#a7a7ab;
+    --gray1-border:#A2A3B1;
+    --verdigris: #3AA39F;
+}
+
+
+
+.magnifier-border{
+    position: relative;
+  }
+.magnifier-border::before{
+content: '';
+height: 12rem;
+border-radius: 1rem;
+width: .2rem;
+display: block;
+background-color: #dee2e6;
+position: absolute;
+bottom: -2.7rem;
+left: -2rem;
+}
+.gray-color{
+    color: var(--gray);
+}
+.fs1{
+    font-size: 4.4rem;
+}
+.w-40{
+    width: 40%;
+}
+.mt1{
+margin-top: 8rem;
+}
+.ml1{
+    margin-left: 4rem;
+}
+.ml2{
+    margin-left: 16rem;
+}
+.ml3{
+    margin-left: 70rem;
+}
+.ml4{
+    margin-left: 24rem;
+}
+.my-6{
+    margin-top: 6rem;
+}
+.my-btn{
+    border: .1rem;
+    border-style: solid;
+    border-color: var(--gray1-border);
+    border-radius: .3rem;
+    background-color: var(--white);
+    padding: 1.1rem 1.6rem 1.1rem 1.6rem;
+
+}
+.my-btn2{
+    border: .1rem;
+    border-style: solid;
+    border-color: var(--gray1-border);
+    border-radius: .3rem;
+    background-color: var(--verdigris);
+    padding: 1.1rem .4rem 1.1rem .4rem;
+}
+li:first-child{
+    list-style: none;
+}
+.t-green{
+    color: var(--verdigris);
+}
+.image-box{
+    position: relative;
+}
+.image-box::after{
+content:"" ;
+width: 43rem;
+height: 25rem;
+background-color: #3aa39f1e;
+position:absolute;
+right: -7rem;
+top: 9rem;
+z-index: -1;
+}
