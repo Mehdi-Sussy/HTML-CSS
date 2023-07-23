@@ -1,0 +1,133 @@
+@import url(./_resets.css);
+:root{
+  --text-white:#ffffff;
+  --white:#fff;
+  --green:#20DC49;
+  --gray-text:#5A5A5A;
+  --gray-text2:#7E7E7E;
+  --verdigris: #3AA39F;
+  --text-black:#000000;
+  --border-color-gray:#DEDEDE;
+  --line-stroke-color:#DBDBDB;
+}
+.lines{
+  position: relative;
+}
+.lines::before{
+content: "";
+display: flex;
+width: 15rem;
+height: 0.15rem;
+background-color: var(--border-color-gray);
+position: absolute;
+top: 48%;
+left: 17%;
+}
+.lines::after{
+  content: "";
+  display: flex;
+  width: 15rem;
+  height: 0.15rem;
+  background-color: var(--border-color-gray);
+  position: absolute;
+  top: 48%;
+  left: 63%;
+  }
+  .ml{
+   margin-left: 50rem;
+  }
+  .py{
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+  }
+.w-70{
+  width: 70%;
+  }
+.gray-text{
+  color: var(--gray-text);
+}
+.gray-text2{
+  color: var(--gray-text2);
+}
+.green-color{
+  color:var(--green) ;
+}
+.green-color-bg{
+  background-color:var(--green) ;
+}
+.container2{
+max-width: 1440px;
+}
+  .button1 {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    border-radius: 5rem;
+    background-color: var(--green);
+    border:0;
+  }
+.bg-blur{
+  width: 24.6rem;
+  height: 15.8rem;
+  background-color: #985252; 
+  filter: blur(2px);
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  border-radius: 3rem;
+  opacity: 50%;
+}
+.bg-text {
+  color: white;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  z-index: 2;
+  width: 24.6rem;
+  padding: 20px;
+  border-radius: 3rem;
+}
+.btn-custom{
+  padding: 1rem 3rem 1rem 3rem;
+  border-color: var(--green);
+  border-radius: .9rem;
+  border-style: solid;
+}
+.btn-custom-no-border{
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: .9rem;
+  border-style: solid;
+  border-color: var(--border-color-gray);
+}
+.input-styles{
+  border-radius: .9rem;
+  border-style: solid;
+  border-color: var(--border-color-gray);
+}
+
+.hiddeneye{
+  position: relative;
+}
+.hiddeneye::after{
+  content: "";
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  height: 2rem;
+  width: 2rem;
+  background-image:url(../IMG/blind1.png);
+  
+}
+.hiddeneye1{
+  position: relative;
+}
+.hiddeneye1::before{
+  content: "";
+  position: absolute;
+  top: -1230%;
+  left: 78%;
+  height: 2rem;
+  width: 2rem;
+  background-image:url(../IMG/blind1.png);
+  
+}
